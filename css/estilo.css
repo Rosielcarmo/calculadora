@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body{
+
+	background: linear-gradient(#1229af, rgb(0, 0, 0),#1229af);
+	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+
+
+#container-principal{
+
+	background: #fff;
+	margin-top: 100px;
+	border-radius: 20px;
+}
+
+
+
+.jumbotron{
+
+	background:  #fff; 
+	color: #000;
+}
+
+
+.jumbotron{
+
+	font-weight: 900; 
+	text-align: center;
+}
+
+
+.btn{
+
+	background: #000; 
+	color: #fff;
+}
+
+
+#resultado{
+
+	background: #fff;
+	color: #000;
+	text-align: center;
+}
