@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,81 +11,86 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
     <!-- CSS Custom -->
     <link rel="stylesheet" href="css/estilo.css" />
-    
+
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png">
 
     <!-- javascript -->
     <script type="text/javascript" src="js/javascript.js"></script>
 
-  </head>
+</head>
 
-  <body>
-      
-    <div class="container" id="container-principal">
+<body>
 
-        <div class="jumbotron">
-          <h1 class="display-4">Calculadora</h1>         
-        </div>
+    <div class="container">
 
-        <div class="row">
+        <div class="container" id="container-principal">
 
-            <div class="col-md-4">
-                <input type="number" id="num1" class="form-control" placeholder="Digite Primeiro Número" />
+            <div class="jumbotron">
+                <h1 class="display-4">Calculadora</h1>
             </div>
 
-            <div class="col-md-4">
-                <form role="form">
-                    <select id="operacao" class="form-control">
-                        <option value="0" class="form-control">-- Escolha Uma Operação --</option>
-                        <option value="1" class="form-control">Adição</option>
-                        <option value="2" class="form-control">Subtração</option>
-                        <option value="3" class="form-control">Multiplicação</option>
-                        <option value="4" class="form-control">Divisão</option>
-                        <option value="5" class="form-control">Módulo</option>
-                    </select>                   
-                </form> 
+            <div class="row">
+
+                <div class="col-md-4">
+                    <input type="number" id="num1" class="form-control" placeholder="Digite Primeiro Número" />
+                </div>
+
+                <div class="col-md-4">
+                    <form role="form">
+                        <select id="operacao" class="form-control">
+                            <option value="0" class="form-control">-- Escolha Uma Operação --</option>
+                            <option value="1" class="form-control">Adição</option>
+                            <option value="2" class="form-control">Subtração</option>
+                            <option value="3" class="form-control">Multiplicação</option>
+                            <option value="4" class="form-control">Divisão</option>
+                            <option value="5" class="form-control">Módulo</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="col-md-4">
+                    <input type="number" id="num2" class="form-control" placeholder="Digite Segundo Número" />
+                </div>
+
             </div>
 
-            <div class="col-md-4">
-                <input type="number" id="num2" class="form-control" placeholder="Digite Segundo Número" />
+            <br />
+
+            <hr />
+
+            <div class="row">
+
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button class="btn btn-lg btn-block" onclick="calculaValor()">Calcular</button>
+                </div>
+                <div class="col-md-4"></div>
+
             </div>
 
-        </div>
+            <hr />
 
-        <br />
+            <br />
 
-        <hr />
-
-        <div class="row">
-            
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <button class="btn btn-lg btn-block" onclick="calculaValor()">Calcular</button>
+            <div class="jumbotron">
+                Resultado:<input type="number" id="resultado" class="form-control" readonly
+                    placeholder="Resultado OPeração" />
             </div>
-            <div class="col-md-4"></div>
 
-        </div>
+        </div> <!-- Fim Container -->
 
-        <hr />
 
-        <br />
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <div />
+</body>
 
-        <div class="jumbotron">
-          Resultado:<input type="number" id="resultado" class="form-control" readonly placeholder="Resultado OPeração" />        
-        </div>
-         
-    </div> <!-- Fim Container -->
-    
-
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  </body>
 </html>
